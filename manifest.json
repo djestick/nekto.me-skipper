@@ -1,0 +1,38 @@
+﻿{
+    "manifest_version":  3,
+    "name":  "Nekto.me Skipper",
+    "version":  "0.2.0",
+    "description":  "Автоматичний пропуск у Nekto.me",
+    "permissions":  [
+                        "storage"
+                    ],
+    "action":  {
+                   "default_title":  "Auto Skipper",
+                   "default_popup":  "popup.html"
+               },
+    "background":  {
+                       "service_worker":  "background.js"
+                   },
+    "web_accessible_resources":  [
+                                     {
+                                         "resources":  [
+                                                           "ukrainizator.json"
+                                                       ],
+                                         "matches":  [
+                                                         "\u003call_urls\u003e"
+                                                     ]
+                                     }
+                                 ],
+    "content_scripts":  [
+                            {
+                                "matches":  [
+                                                "https://nekto.me/*",
+                                                "http://nekto.me/*"
+                                            ],
+                                "js":  [
+                                           "content.js"
+                                       ],
+                                "run_at":  "document_idle"
+                            }
+                        ]
+}

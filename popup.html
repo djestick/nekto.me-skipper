@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Auto Skipper</title>
+    <link rel="stylesheet" href="popup.css" />
+    <script defer src="popup.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <div class="logo">⏩</div>
+        <div class="title">
+          <div class="name">Nekto.me skipper</div>
+          <div class="sub">Автоматичний пропуск у Nekto.me</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <div class="label">Автоматичний пропуск</div>
+          <label class="switch">
+            <input id="toggle" type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="hint" id="stateHint">Вимкнено</div>
+      </div>
+
+      <div class="card" style="margin-top: 10px">
+        <div class="row">
+          <div class="label">
+            Українізатор <span class="beta-badge">БЕТА</span>
+          </div>
+          <label class="switch">
+            <input id="toggleUa" type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="hint" id="uaHint">Вимкнено</div>
+      </div>
+
+      <div class="foot">
+        Зроблено <code>@djestick</code> разом з <code>ChatGPT Codex</code>
+      </div>
+    </div>
+  </body>
+</html>
