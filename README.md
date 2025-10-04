@@ -27,19 +27,3 @@
 2. Увімкніть **Developer mode**
 3. Натисніть **Load unpacked**
 4. Оберіть теку проєкту
-
----
-
-## 🇬🇧 English
-
-### ✨ Features
-
-- ⚡ **Auto-skip**: automatically clicks **Next** to start a new chat
-- 🇺🇦 **Ukrainizer**: Nekto.me is now fully ukrainizated!
-
-### 📥 Install (Chrome/Edge)
-
-1. Open `chrome://extensions`
-2. Enable **Developer mode**
-3. Click **Load unpacked**
-4. Select the project folder
